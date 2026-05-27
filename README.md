@@ -5,8 +5,8 @@
 <p align="center"><strong>Hyper-velocity LLM orchestration layer for autonomous web development and core DOM control.</strong></p>
 
 ---
-
-## Tryhards LLM
+ 
+## Tryhards LLM 
 
 * **Context Ingress Fabric** — Real-time repo ingestion mapping >50k source lines/sec into live LLM context using AST parsing and workspace indexing.
 * **Core Control Oracle** — Multi-agent debate trees (Claude 3.7 + GPT-4.5) with recursive self-compilation to resolve feature prompts into strict, lint-passing TypeScript.
