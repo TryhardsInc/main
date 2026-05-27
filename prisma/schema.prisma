@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  clerkId       String    @unique
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  projects      Project[]
+  waitlistEntries WaitlistEntry[]
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  status      ProjectStatus @default(DRAFT)
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  generatedAt DateTime @default(now())
+  metadata    Json
+}
+
+model WaitlistEntry {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  source    String?
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+}
+
+enum ProjectStatus {
+  DRAFT
+  IN_PROGRESS
+  COMPLETED
+  DELIVERED
+}
