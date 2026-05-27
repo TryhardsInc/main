@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" alt="Tryhards Logo" src="YOUR_IMAGE_URL_HERE">
+  <img width="500" alt="Tryhards Logo" src="https://i.ibb.co/ddsmd8n/Gemini-Generated-Image-olwxhxolwxhxolwx-clean.webp">
 </p>
 
 <h1 align="center">Tryhards</h1>
