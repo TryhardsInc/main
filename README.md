@@ -1,7 +1,7 @@
 <p align="center">
   <img width="500" alt="Tryhards Logo" src="https://i.ibb.co/ddsmd8n/Gemini-Generated-Image-olwxhxolwxhxolwx-clean.webp">
 </p>
-
+ 
 <p align="center"><strong>Hyper-velocity LLM orchestration layer for autonomous web development and core DOM control.</strong></p>
 
 ---
