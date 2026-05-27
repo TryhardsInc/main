@@ -1,0 +1,105 @@
+tryhards-space/
+├── .github/
+│   ├── workflows/
+│   │   ├── deploy.yml
+│   │   ├── lint.yml
+│   │   ├── test.yml
+│   │   └── ai-review.yml                 # ← New: Auto AI code review on PRs
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+├── public/
+│   ├── favicon.ico
+│   ├── logo.svg
+│   ├── og-image.png
+│   └── icons/
+├── src/
+│   ├── app/
+│   │   ├── (marketing)/
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx                      # Meme Terminal homepage
+│   │   │   ├── services/
+│   │   │   │   └── page.tsx
+│   │   │   ├── mvp/
+│   │   │   │   └── page.tsx
+│   │   │   └── ai-builder/
+│   │   │       └── page.tsx                  # Public AI Landing Page Builder
+│   │   ├── api/
+│   │   │   ├── waitlist/route.ts
+│   │   │   ├── contact/route.ts
+│   │   │   ├── generate-landing/route.ts     # ← AI Generation endpoint
+│   │   │   └── webhooks/stripe/route.ts
+│   │   ├── dashboard/
+│   │   │   ├── page.tsx
+│   │   │   └── projects/[id]/page.tsx
+│   │   └── layout.tsx
+│   ├── components/
+│   │   ├── ui/                          # shadcn + custom
+│   │   ├── landing/
+│   │   ├── terminal/
+│   │   └── ai/
+│   │       ├── PromptInput.tsx
+│   │       ├── GenerationPreview.tsx
+│   │       └── ModelSelector.tsx
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   ├── supabase.ts
+│   │   ├── openai.ts                        # ← AI core
+│   │   ├── analytics.ts
+│   │   └── clerk.ts                         # Auth
+│   ├── hooks/
+│   ├── ai/
+│   │   ├── prompts.ts                       # System prompts for landing pages
+│   │   ├── templates/
+│   │   │   ├── saas.ts
+│   │   │   ├── tool.ts
+│   │   │   └── agency.ts
+│   │   └── generators/
+│   │       ├── landingPage.ts
+│   │       └── mvpRoadmap.ts
+│   └── styles/
+├── ai-tools/                                 # ← NEW FOLDER: Open-source AI tools
+│   ├── landing-page-generator/
+│   │   ├── index.ts
+│   │   ├── cli.ts                            # npm run generate-landing
+│   │   ├── templates/
+│   │   └── README.md
+│   └── mvp-scaffold/
+│   │   ├── nextjs-mvp-template/
+│   │   ├── supabase-starter/
+│   │   └── README.md
+├── packages/                                 # ← NEW FOLDER: Monorepo packages
+│   ├── tryhards-ui/                          # Reusable component library
+│   │   ├── package.json
+│   │   ├── src/
+│   │   └── tsconfig.json
+│   └── tryhards-ai/                          # AI SDK
+│       ├── package.json
+│       └── src/
+├── prisma/
+│   └── schema.prisma
+├── scripts/
+│   ├── generate-landing.ts
+│   ├── deploy-preview.sh
+│   ├── seed-db.ts
+│   └── backup-ai-prompts.sh                  # ← New
+├── docs/
+│   ├── roadmap.md
+│   ├── mvp-pricing.md
+│   ├── copywriting-guide.md
+│   └── ai-prompt-engineering.md              # ← New
+├── tests/
+│   ├── unit/
+│   └── e2e/
+├── .env.example
+├── .gitignore
+├── turbo.json                                # ← Turborepo config
+├── next.config.mjs
+├── tailwind.config.ts
+├── tsconfig.json
+├── package.json
+├── pnpm-workspace.yaml                       # ← Monorepo setup
+├── README.md
+├── LICENSE
+├── vercel.json
+└── biome.json                                # ← New: Fast linter
