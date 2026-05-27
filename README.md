@@ -5,7 +5,7 @@
 <p align="center"><strong>Hyper-velocity LLM orchestration layer for autonomous web development and core DOM control.</strong></p>
 
 ---
- 
+  
 ## Tryhards LLM 
 
 * **Context Ingress Fabric** — Real-time repo ingestion mapping >50k source lines/sec into live LLM context using AST parsing and workspace indexing.
