@@ -4,7 +4,7 @@
  
 <p align="center"><strong>Hyper-velocity LLM orchestration layer for autonomous web development and core DOM control.</strong></p>
 
---- 
+---  
   
 ## Tryhards LLM 
 
